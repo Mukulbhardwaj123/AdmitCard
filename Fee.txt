@@ -1,0 +1,22 @@
+package com.heckercode.utilities;
+import com.heckercode.UserDefineException.AdmitCard;
+
+public class Fee{
+    double feeamount;
+    public void Fee(double amount)
+    {
+        this.feeamount=amount;
+    }
+
+   public void deposite(double amount)throws AdmitCard{
+        if(amount==feeamount)
+        {
+            System.out.println("Admit card can be issue");
+        }
+        else throw new AdmitCard();
+
+
+    }
+
+
+}

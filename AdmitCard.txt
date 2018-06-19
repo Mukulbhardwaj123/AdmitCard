@@ -1,0 +1,17 @@
+package com.heckercode.UserDefineException;
+
+public class AdmitCard  extends Exception{
+    private double amount;
+    public AdmitCard(double amount){
+        this.amount=amount;
+    }
+
+    public AdmitCard() {
+
+    }
+
+    public double getAmount(){
+        return amount;
+    }
+}
+
